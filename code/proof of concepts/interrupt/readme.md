@@ -1,30 +1,31 @@
 # start/stop interrupt proof of concept
 minimale hard- en software die de correcte werking van een start/stop drukknop aantoont, gebruik makend van een hardware interrupt
 
-const int Button = 2; 
-const int ledPin = 7; 
-bool Running; 
+const byte Start = 2;
+int Led = 8; 
+
+bool Run; 
 
 void setup() {
   analogReference(DEFAULT);
-  pinMode(Button, INPUT_PULLUP);
-  pinMode(ledPin, OUTPUT);
-  attachInterrupt(digitalPinToInterrupt(Button),Interrupt, RISING);
+  pinMode(Start, INPUT_PULLUP);
+  pinMode(Led, OUTPUT);
+  
+  attachInterrupt(digitalPinToInterrupt(Start),ProgrammaRun, FALLING);
 }
 
 void loop() {
-  if(Running == true){
-    digitalWrite(ledPin, HIGH);
-    delay(50);
-    digitalWrite(ledPin, LOW);
-    delay(50);
+  if(Run == true){
+    digitalWrite(8, HIGH);
+    delay(1000);
+    digitalWrite(8, LOW);
+    delay(1000);
   }
   else {
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(8, HIGH);
   }  
 }
 
-void Interrupt() {
-    Running =! Running; 
+void ProgrammaRun() {
+    Run =! Run; 
 }
-
