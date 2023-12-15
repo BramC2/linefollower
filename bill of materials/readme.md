@@ -9,7 +9,7 @@
 |         3| Microcontroller ATmega32U4  | arduino leonardo kit       |  recup  |        5,53EUR      |   1   |    5,53EUR     |
 |         4| Motor   | mini DC N20 6V 500rpm micro transmissiemotor     |  nieuw  |    6,54EUR        |   2   |   13,08EUR        |
 |         5| H-brug   | DRV8833 dual motor driver            |  nieuw  |     3,265EUR         |  3    |    9,795EUR     |
-|         6| Bluetooth module   | HC-05 master-slave 6pin integrated bluetooth module           |  nieuw  |   4,73EUR           |  1    |    4,73EUR     |
+|         6| Bluetooth module   | HC-06 master-slave 6pin integrated bluetooth module           |  nieuw  |   4,73EUR           |  1    |    4,73EUR     |
 |         7| Breadbord | arduino leonardo kit   | recup |    /       |   1   |    /     |
 |         8| JumperWires | arduino leonardo kit   | recup |    /       |   16   |    /     |
 |         9| Batterij houder |18650 lithium-ion houder    | nieuw |    1,95EUR       |   1   |    1,95EUR     |
